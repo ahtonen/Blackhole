@@ -4,11 +4,13 @@
 
 ## Prerequisite
 
-- [cmake](https://cmake.org/)
-- [conan](https://conan.io/) package manager [^1][^2]
+- [cmake](https://cmake.org/), v3.5 or greater
+- [conan](https://conan.io/), v1.xx package manager [^1][^2]
 
 [^1]: You might need to configure [$HOME/.conan/conan.conf](https://docs.conan.io/en/latest/reference/config_files/conan.conf.html) and Conan [profiles](https://docs.conan.io/en/latest/reference/profiles.html) if the `default profile` is not generated due to different build environments on your distribution.
-[^2]: Conan 1.xx instead of conan 2.xx or higher is suggested in order to avoid unnecessary problems.
+[^2]: Conan 1.xx is needed. For example 1.64 should work fine. Note that the recommended way of installing conan is to first create a Python venv and finally install conan there via pip.
+
+Note that you might need to manually install some pre-requisite X11 development libraries under administrative priviledges.
 
 ## Build the code
 
